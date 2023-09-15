@@ -1,0 +1,100 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+.container{
+    background: rgb(18,190,185);
+    background: linear-gradient(153deg, rgba(18,190,185,1) 37%, rgba(55,85,203,1) 100%);
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    min-height:400px;
+    width:40%;
+    min-width:300px;
+    background-color:azure;
+   padding:20px 30px;
+   border-radius:10px;
+}
+h1{
+    text-align:center;
+    color:rgb(0, 75, 188);
+    font-size:25px;
+}
+.hands{
+    margin:30px 10px;
+    display:flex;
+    justify-content: space-between;
+}
+.hands div{
+    font-size:100px;
+    color:rgb(0, 75, 188);
+    padding:10px;
+  
+
+}
+
+.rock.right{
+    transform:rotate(90deg);
+    /* animation:shake1 0.3s linear infinite; */
+
+}
+
+.rock.left{
+    transform:scaleX(-1) rotate(90deg);
+    /* animation:shake2 0.3s linear infinite; */
+}
+.scissor.right{
+    transform:scaleX(-1);
+}
+.paper.right{
+    transform:rotate(90deg);
+
+}
+.paper.left{
+    transform:rotate(270deg) scaleX(-1);
+}
+
+.result{
+    color:rgb(0, 75, 188);
+    text-align:center;
+    margin:5px;
+    font-weight:bold;
+}
+
+.choice{
+    margin:10px 20px;
+    display:flex;
+    justify-content:center;
+}
+.choice button{
+    color:rgb(0, 75, 188);
+    font-size:40px;
+    border:2px solid rgb(0, 75, 188);
+    outline:none;
+    padding:10px;
+    margin:5px;
+    background-color:azure;
+    
+}
+@keyframes shake1{
+0%{
+transform:rotate(80deg);
+}
+50%{
+    transform:rotate(100deg);
+}
+100%{ transform:rotate(80deg); }
+}
+@keyframes shake2{
+    0%{
+        transform:scaleX(-1) rotate(80deg);}
+    50%{
+        transform: scaleX(-1) rotate(100deg);}
+    100%{
+        transform:scaleX(-1) rotate(80deg);}
+}
